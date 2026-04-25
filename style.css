@@ -171,7 +171,7 @@
     /* padding: 10px; */
     padding-right: 180px;
     position: absolute;
-    top: 377px;
+    top: 356px;
     right: -30px;
     height: 20px;
     filter: grayscale(1);
@@ -180,12 +180,13 @@
 .line {
     width: 708px;
     border-bottom: 2px solid;
-    margin-left: 250px;
-    margin-top: 10px
+    /* margin-left: 250px; */
+        
+        margin-left: 754px;    margin-top: 10px
 }
 
 .level {
-    text-align: center;
+   text-align: center;
     font-size: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
     border-radius: 20px;
@@ -295,7 +296,7 @@
     box-shadow: 0px 8px 40px 0px #0000001A;
     margin-right: 100px;
     padding: 50px;
-    padding-left: 100px;
+    padding-left: 400px;
     text-align: center;
 }
 
@@ -324,7 +325,7 @@
     height: 450px;
     padding-top: 20px;
     display: flex;
-    column-gap: 20px;
+    column-gap: 5%;
     overflow-x: auto;
 }
 
@@ -371,13 +372,14 @@
 }
 
 #button {
-    padding-left: 650px;
+    padding-left: 50%;
 
 }
 
 .experience-section {
     display: flex;
-    width: 90%;
+    /* width: 90%; */
+    column-gap: 4%;
     padding-left: 80px;
     padding-top: 20px;
 }
@@ -389,6 +391,7 @@
     border-radius: 20px;
     margin-left: 20px;
     margin-top: 30px;
+    padding: 2%;
 }
 
 .company {
@@ -421,7 +424,7 @@
 .timeline {
     position: relative;
     border-left: 5px solid #000;
-    height: 400px;
+    height: 300px;
 }
 
 .timeline-item {
@@ -467,7 +470,8 @@
 
 .image-section .achievements {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 22px;
+        line-height: 1.5;
     color: #555;
     word-wrap: break-word;
 }
