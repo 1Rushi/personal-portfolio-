@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a58ca, #000);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* CARD */
+        .contact-container {
+            background: #fff;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        /* TITLE */
+        .contact-container h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* INFO BOX */
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* ITEM */
+        .info a,
+        .info div {
+            text-decoration: none;
+            background: #f4f6f9;
+            padding: 15px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+            color: #000;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        /* HOVER EFFECT */
+        .info a:hover {
+            background: #0a58ca;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ICON */
+        .info i {
+            font-size: 18px;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* MOBILE */
+        @media(max-width: 768px) {
+            .contact-container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>Let’s connect and build something great 🚀</p>
+
+        <div class="info">
+
+            <!-- EMAIL (CLICK TO OPEN MAIL) -->
+            <!-- <a href="mailto:your@email.com">
+            <i class="fa fa-envelope"></i> rushikeshkakade603@gmail.com
+        </a> -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to= rushikeshkakade603@gmail.com" target="_blank">
+                <i class="fa fa-envelope"></i> rushikeshkakade603@gmail.com
+            </a>
+            <!-- PHONE -->
+            <a href="tel:+919876543210">
+                <i class="fa fa-phone"></i> +91 7039967948
+            </a>
+
+            <!-- LOCATION -->
+            <div>
+                <i class="fa fa-location-dot"></i> India
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

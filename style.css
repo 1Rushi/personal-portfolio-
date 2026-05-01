@@ -397,7 +397,14 @@
 .company {
     padding: 20px;
 }
-
+.company-logo {
+    width: 170px;   /* change size here */
+    height: auto;   /* keeps aspect ratio */
+}
+.company2logo{
+    width: 150px;   /* change size here */
+    height: auto;   /* keeps aspect ratio */
+}
 .company button {
     background: #0948B4;
     padding: 5px;
@@ -532,3 +539,464 @@ h2 {
 .contact-button:hover {
     background-color: #003d80;
 }
+
+
+.more-text { display: none; }
+.read-more { color: blue; cursor: pointer; }
+
+
+                                            /* ===== FIX RIGHT EXTRA SPACE WITHOUT CHANGING UI ===== */
+
+
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+}
+
+.line {
+    margin-left: 50;
+}
+
+                                                    /* ===== EXACT PORTFOLIO STYLE MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+        background: #f4f6f9;
+    }
+
+                                                 /* ===== NAVBAR (LIKE YOUR IMAGE) ===== */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 10px 0;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 6px;
+    }
+
+    .logo a {
+        font-size: 13px;
+        opacity: 0.9;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .devlop-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .developer {
+        width: 100%;
+        margin: 0;
+        padding: 20px 15px;
+        text-align: center;
+        background: #fff;
+    }
+
+    .developer h1 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .developer h2 {
+        font-size: 15px;
+        color: #666;
+    }
+
+    .developer p {
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    /* IMAGE RIGHT → CENTER LIKE YOUR DESIGN */
+    .img {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+    }
+
+    .img img {
+        width: 130px;
+        border-radius: 50%;
+    }
+
+    /* BUTTON STYLE */
+    .resume, .show {
+        width: 90%;
+        margin: 8px auto;
+        display: block;
+    }
+
+    .show {
+        margin-left: auto;
+    }
+
+    /* ===== "I'M SUITABLE FOR" CARD ===== */
+    .level {
+        margin: 15px;
+        padding: 20px 10px;
+        border-radius: 15px;
+    }
+
+    .stage {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .line {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    /* ===== EXPERTISE CARD ===== */
+    .developer-section {
+        flex-direction: column;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .size {
+        width: 100%;
+        height: auto;
+    }
+
+    .description p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    /* ===== TECH SKILLS (SCROLL LIKE IMAGE) ===== */
+    .Tools h1 {
+        padding-left: 15px;
+        font-size: 22px;
+    }
+
+    .app {
+        margin-left: 10px;
+        gap: 12px;
+        overflow-x: auto;
+    }
+
+    .Tools img {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* ===== SOFT SKILLS (BOX STYLE) ===== */
+    .skill-section {
+        padding-left: 15px;
+    }
+
+    .skill-list {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ===== PROJECT CARDS (LIKE YOUR IMAGE) ===== */
+    .Project {
+        padding-left: 15px;
+    }
+
+    .mini-project {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .pro {
+        width: 90%;
+    }
+
+    .pro img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pro p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .project-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #button {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /* ===== EXPERIENCE ===== */
+    .experience-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .google {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+
+    /* ===== QUALIFICATION ===== */
+    .qualification-section {
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .image-section img {
+        width: 100%;
+    }
+
+    .timeline-item h4 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* ===== FOOTER ===== */
+    .profile-picture img {
+        position: static;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+                                                    /* ===== REMOVE EXTRA SPACE (FINAL CLEAN FIX) ===== */
+@media (max-width: 768px) {
+
+    /* remove horizontal scroll completely */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* remove all big left/right spacing */
+    * {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* give clean uniform padding instead */
+    section,
+    .container,
+    .developer,
+    .Project,
+    .Tools,
+    .skill-section,
+    .qualification-section,
+    .experience-section {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* fix elements using big fixed width */
+    .developer p,
+    .description p,
+    .pro p {
+        width: 100% !important;
+    }
+
+    .pro img,
+    .image-section img {
+        width: 100% !important;
+        height: auto;
+    }
+
+    /* fix line overflow */
+    .line {
+        width: 100% !important;
+    }
+
+    /* fix cards spacing */
+    .developer-section,
+    .google,
+    .pro,
+    .level {
+        margin: 10px 0 !important;
+    }
+
+    /* fix skill list extra spacing */
+    .skill-list {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* fix navbar spacing */
+    .navbar {
+        padding: 10px 0 !important;
+    }
+}
+
+
+/* ===== FIX HEADING ALIGNMENT (MOBILE ONLY) ===== */
+@media (max-width: 768px) {
+
+    .experience-section h1,
+    .qualification-section h1,
+    .head2 h1,
+    .Project h1 {
+        text-align: left !important;
+        padding-left: 15px !important;
+        margin-left: 0 !important;
+    }
+
+}
+
+
+
+/* ===== NAVBAR ONE LINE MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row !important;
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    .logo {
+        flex-direction: row !important;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .logo a {
+        display: inline-block;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* hide scrollbar (optional clean look) */
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* ===== HIDE PROJECT BUTTONS ON MOBILE ===== */
+@media (max-width: 768px) {
+
+    #button {
+        display: none !important;
+    }
+
+    .move-button {
+        display: none !important;
+    }
+
+}
+
+
+
+                                                                            /* ===== FINAL MOBILE POLISH ===== */
+@media (max-width: 768px) {
+
+    /* ===== SMOOTH SCROLL SNAP (PROJECTS LIKE APP) ===== */
+    .mini-project {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    .pro {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+        border-radius: 12px;
+    }
+
+    /* smooth scrolling */
+    .mini-project {
+        scroll-behavior: smooth;
+    }
+
+    /* ===== TOUCH FRIENDLY BUTTONS ===== */
+    .project-button,
+    .resume,
+    .show {
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    /* tap effect */
+    .project-button:active,
+    .resume:active,
+    .show:active {
+        transform: scale(0.97);
+    }
+
+    /* ===== CONSISTENT SPACING ===== */
+    section {
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    /* ===== CARD LOOK IMPROVEMENT ===== */
+    .developer,
+    .pro,
+    .google,
+    .developer-section,
+    .level {
+        border-radius: 12px;
+        background: #fff;
+    }
+
+    /* ===== SHADOW CLEAN ===== */
+    .pro,
+    .google,
+    .developer,
+    .developer-section {
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+}
+
+
+
+
+
+
+
+
+

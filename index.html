@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div cl ass="container">
         <header>
             <nav class="navbar">
                 <div class="logo">
@@ -23,13 +23,13 @@
                     <a href="#about">About me</a>
                     <a href="#project">Project</a>
                     <a href="#skill">Skills</a>
-                    <a href="#contact">Contact Me</a>
+                    <a href="contact.html">Contact Me</a>
                 </div>
 
-                <div class="search-container">
+                <!-- <div class="search-container">
                     <i class="fa fa-search"></i>
                     <input class="search" type="search" placeholder="Search">
-                </div>
+                </div> -->
             </nav>
         </header>
 
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="img">
-                    <img src="pic.png" alt="photo">
+                    <img src="/image/pic.png" alt="photo">
                 </div>
             </div>
         </section>
@@ -72,9 +72,11 @@
                     </p>
                     <div class="resume0">
                         <span class="resume">
-                            <a href="Rushikesh resume1.pdf" download="Rushikesh.pdf"> Download Resume</a>
+                            <a href="update rushi resume.pdf" download>Download Resume</a>
                         </span>
-                        <span class="show1"> <button class="show">show-work</button> </span>
+                        <span class="show1">
+                            <button class="show" onclick="goToWork()">show-work</button>
+                        </span>
                     </div>
 
                 </div>
@@ -104,7 +106,7 @@
             </div>
 
             <div class="developer-section">
-                <img src="ss.png" alt="ss" class="size">
+                <img src="/image/ss.png" alt="ss" class="size">
 
                 <div class="description">
                     <h2>Web Development</h2>
@@ -122,22 +124,22 @@
             <div class="Tools">
                 <h1>Tech Skills</h1>
                 <div class="app">
-                    <div><img src="vscode.png" alt="VSCODE">VSCODE</div>
-                    <div><img src="npm.png" alt="npm"> npm</div>
-                    <div><img src="mongodb.png" alt="mongodb"> mongodb</div>
-                    <div><img src="DevTools.png" alt="DevTools"> DevTools</div>
-                    <div><img src="git.png" alt="GIT">GIT </div>
-                    <div><img src="reactjs.png" alt="reactjs">reactjs </div>
-                    <div><img src="redux.png" alt="redux">redux </div>
-                    <div><img src="spring-boot-tutorial.jpg" alt="bootspring">bootspring </div>
-                    <div><img src="angular.jpg" alt="VSCODE">angular </div>
-                    <div><img src="postman.webp" alt="npm"> postman</div>
-                    <div><img src="mysql.webp" alt="DevTools">mysql </div>
-                    <div><img src="python.webp" alt="mongodb">python </div>
-                    <div><img src="git.png" alt="GIT">GIT </div>
-                    <div><img src="reactjs.png" alt="reactjs"> reactjs</div>
-                    <div><img src="redux.png" alt="reduxIT"> redux</div>
-                    <div><img src="spring-boot-tutorial.jpg" alt="bootspring">bootspring </div>
+                    <div><img src="image/vscode.png" alt="VSCODE">VSCODE</div>
+                    <div><img src="image/npm.png" alt="npm"> npm</div>
+                    <div><img src="image/mongodb.png" alt="mongodb"> mongodb</div>
+                    <div><img src="image/DevTools.png" alt="DevTools"> DevTools</div>
+                    <div><img src="image/git.png" alt="GIT">GIT </div>
+                    <div><img src="image/reactjs.png" alt="reactjs">reactjs </div>
+                    <div><img src="image/redux.png" alt="redux">redux </div>
+                    <div><img src="image/spring-boot-tutorial.jpg" alt="bootspring">bootspring </div>
+                    <div><img src="image/angular.jpg" alt="VSCODE">angular </div>
+                    <div><img src="image/postman.webp" alt="npm"> postman</div>
+                    <div><img src="image/mysql.webp" alt="DevTools">mysql </div>
+                    <div><img src="image/python.webp" alt="mongodb">python </div>
+                    <div><img src="image/git.png" alt="GIT">GIT </div>
+                    <div><img src="image/reactjs.png" alt="reactjs"> reactjs</div>
+                    <div><img src="image/redux.png" alt="reduxIT"> redux</div>
+                    <div><img src="image/spring-boot-tutorial.jpg" alt="bootspring">bootspring </div>
                 </div>
 
             </div>
@@ -146,16 +148,16 @@
                 <h1>Soft Skills</h1>
 
                 <div class="skill-list">
-                    <div><img src="TM.png" alt="Time Management">
+                    <div><img src="image/TM.png" alt="Time Management">
                         <p>Time Management</p>
                     </div>
-                    <div><img src="PS.png" alt="Problem Sloving">
+                    <div><img src="image/PS.png" alt="Problem Sloving">
                         <p>Problem Sloving</p>
                     </div>
-                    <div><img src="ETL.png" alt="Excellent Team Lead">
+                    <div><img src="image/ETL.png" alt="Excellent Team Lead">
                         <p>Excellent Team Lead</p>
                     </div>
-                    <div><img src="AD.png" alt="Application Development">
+                    <div><img src="image/AD.png" alt="Application Development">
                         <p>Application Development</p>
                     </div>
                 </div>
@@ -167,8 +169,8 @@
             <div class="Project">
                 <h1>Project</h1>
 
-                <div class="mini-project">
-                    <div class="pro"><img src="temperature.png" alt="Project name">
+                <!-- <div class="mini-project">
+                    <div class="pro"><img src="/image/temperature.png" alt="Project name">
                         <h2>Temperature converter</h2>
                         <P>A temperature converter is a tool or application designed to convert
                             temperature values between different units, such as Celsius (°C), Fahrenheit (°F). It
@@ -177,7 +179,7 @@
                         <button class="project-button">View Project</button>
                     </div>
 
-                    <div class="pro"><img src="counter.png" alt="Project name">
+                    <div class="pro"><img src="/image/counter.png" alt="Project name">
                         <h2>Counter</h2>
                         <p>A counter project is a simple application or tool designed to increment,
                             decrement a numerical value. It typically includes buttons or controls for users to adjust
@@ -186,7 +188,7 @@
                         <button class="project-button">View Project</button>
                     </div>
 
-                    <div class="pro"><img src="project-3.png" alt="Project name">
+                    <div class="pro"><img src="/image/project-3.png" alt="Project name">
                         <h2>Quotes generator</h2>
                         <p>A quotes generator is a simple application or tool that displays random or curated quotes,
                             often
@@ -196,7 +198,7 @@
                         <button class="project-button">View Project</button>
                     </div>
 
-                    <div class="pro"><img src="project-4.png" alt="Project name">
+                    <div class="pro"><img src="/image/project-4.png" alt="Project name">
                         <h2>Project Name</h2>
                         <p> Brief description of the project goes here. Lorem ipsum dolor sit amet consectetur
                             adipisicing
@@ -205,7 +207,7 @@
                         <button class="project-button">View Project</button>
                     </div>
 
-                    <div class="pro"><img src="project-5.png" alt="Project name">
+                    <div class="pro"><img src="/image/project-5.png" alt="Project name">
                         <h2>Project Name</h2>
                         <p>Brief description of the project goes here. Lorem ipsum dolor sit amet consectetur
                             adipisicing
@@ -213,7 +215,215 @@
                             accusamus molestias.</p>
                         <button class="project-button">View Project</button>
                     </div>
+                </div> -->
+                <!-- <div class="mini-project">
+
+                    <div class="pro">
+                        <img src="/image/temperature.png" alt="Project name">
+                        <h2>Temperature converter</h2>
+                        <p>A temperature converter is a tool or application designed to convert
+                            temperature values between different units, such as Celsius (°C), Fahrenheit (°F).</p>
+                        <button class="project-button"
+                            onclick="openProject(' https://1rushi.github.io/temperature/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/counter.png" alt="Project name">
+                        <h2>Counter</h2>
+                        <p>A counter project is a simple application or tool designed to increment,
+                            decrement a numerical value.</p>
+                        <button class="project-button"
+                            onclick="openProject(' https://1rushi.github.io/Counter-js/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-3.png" alt="Project name">
+                        <h2>Expence-Tracker</h2>
+                        <p>The Expense Tracker is a web app that helps users manage their daily income and expenses. It
+                            allows adding, editing, and deleting transactions while automatically calculating the
+                            balance. Users can categorize expenses and view spending insights through simple charts for
+                            better budgeting and financial control.</p>
+                        <button class="project-button" onclick="openProject('#')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>Agency-ux-ui</h2>
+                        <p>A modern responsive agency website built to showcase services, portfolio, team members, and
+                            pricing plans. It includes interactive sections like a team slider, FAQ, contact form, and
+                            smooth animations to create a professional and engaging user experience for clients.</p>
+                        <button class="project-button"
+                            onclick="openProject(' https://1rushi.github.io/Agency-UX-UI/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-5.png" alt="Project name">
+                        <h2>Wheather</h2>
+                        <p>The Weather App is a simple web application that provides real-time weather updates for any location. It displays temperature, humidity, and weather conditions using a clean and responsive interface. Users can search cities to quickly view accurate weather information.</p>
+                        <button class="project-button"
+                            onclick="openProject('https://1rushi.github.io/PRODIGY_WD_05/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>Mediclaim System</h2>
+                        <p>Developed a Mediclaim management system with both user and admin panels to streamline medical insurance claim processing. Users can submit claims, upload documents, and track claim status, while admins can review, verify, and manage claims efficiently through a centralized dashboard with a user-friendly interface.</p>
+                        <button class="project-button" onclick="openProject('#')">View Project</button>
+                    </div>
+
+                    
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>Tic-Tak_toe</h2>
+                        <p>Tic Tac Toe is a simple interactive game where two players take turns marking X and O on a 3×3 grid. The game detects wins, losses, or draws automatically and resets for a new match, providing a fun and engaging experience.</p>
+                        <button class="project-button"
+                        onclick="openProject('https://1rushi.github.io/PRODIGY_WD_03/')">View Project</button>
+                    </div>
+                    
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>Resume</h2>
+                        <p>Developed a responsive personal portfolio website to showcase projects, skills, and experience with a modern UI/UX design. The website includes sections like about, skills, projects, and contact, along with smooth navigation and interactive elements to enhance user engagement and present a professional developer profile.</p>
+                        <button class="project-button"
+                        onclick="openProject(' https://1rushi.github.io/PRODIGY_WD_04/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>no-project</h2>
+                        <p>Brief description of the project goes here.</p>
+                        <button class="project-button" onclick="openProject('#')">View Project</button>
+                    </div>
+
+                </div> -->
+                <div class="mini-project">
+
+                    <div class="pro">
+                        <img src="/image/temperature.png" alt="Project name">
+                        <h2>Temperature converter</h2>
+                        <p>
+                            A temperature converter is a tool or application designed to convert temperature values
+                            between different units...
+                            <span class="more-text">such as Celsius (°C), Fahrenheit (°F). It helps users switch between
+                                scales easily.</span>
+                            <span class="read-more" onclick="toggleText(this)"> Read more</span>
+                        </p>
+                        <button class="project-button"
+                            onclick="openProject('https://1rushi.github.io/temperature/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/counter.png" alt="Project name">
+                        <h2>Counter</h2>
+                        <p>
+                            A counter project is a simple application or tool designed to increment or decrement a
+                            numerical value...
+                            <span class="more-text">It is useful for practicing JavaScript logic and DOM
+                                manipulation.</span>
+                            <span class="read-more" onclick="toggleText(this)"> Read more</span>
+                        </p>
+                        <button class="project-button"
+                            onclick="openProject('https://1rushi.github.io/Counter-js/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-3.png" alt="Project name">
+                        <h2>Expense-Tracker</h2>
+                        <p>
+                            The Expense Tracker is a web app that helps users manage their daily income and expenses. It
+                            allows adding, editing, and ...
+                            <span class="more-text">deleting transactions while automatically calculating the
+                                balance. Users can categorize expenses and view spending insights through simple charts
+                                for
+                                better budgeting and financial control. </span>
+                            <span class="read-more" onclick="toggleText(this)"> Read more</span>
+                        </p>
+                        <button class="project-button" onclick="openProject('https://1rushi.github.io/Expence_tracker01/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>Agency-ux-ui</h2>
+                        <p>
+                            A modern responsive agency website built to showcase services, portfolio, team members, and
+                            pricing plans. It includes interactive ...
+                            <span class="more-text">sections like a team slider, FAQ, contact form, and
+                                smooth animations to create a professional and engaging user experience for
+                                clients.</span>
+                            <span class="read-more" onclick="toggleText(this)"> Read more</span>
+                        </p>
+                        <button class="project-button"
+                            onclick="openProject('https://1rushi.github.io/Agency-UX-UI/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-5.png" alt="Project name">
+                        <h2>Weather</h2>
+                        <p>
+                            The Weather App is a simple web application that provides real-time weather updates for any
+                            location. It displays temperature, humidity, and...
+                            <span class="more-text"> weather conditions using a clean and responsive interface. Users
+                                can search cities to quickly view accurate weather information.</span>
+                            <span class="read-more" onclick="toggleText(this)"> Read more</span>
+                        </p>
+                        <button class="project-button"
+                            onclick="openProject('https://1rushi.github.io/PRODIGY_WD_05/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>Mediclaim System</h2>
+                        <p>
+                            Developed a Mediclaim management system with both user and admin panels to streamline
+                            medical insurance claim processing. Users can submit claims,..
+                            <span class="more-text"> upload documents, and track claim status, while admins can review,
+                                verify, and manage claims efficiently through a centralized dashboard with a
+                                user-friendly interface.</span>
+                            <span class="read-more" onclick="toggleText(this)"> Read more</span>
+                        </p>
+                        <button class="project-button" onclick="openProject('#')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>Tic-Tac-Toe</h2>
+                        <p>
+                            Tic Tac Toe is a simple interactive game where two players take turns marking X and O on a
+                            3×3 grid.The game detects wins, losses, or draws...
+                            <span class="more-text">automatically and resets for a new match, providing a fun and
+                                engaging experience.</span>
+                            <span class="read-more" onclick="toggleText(this)"> Read more</span>
+                        </p>
+                        <button class="project-button"
+                            onclick="openProject('https://1rushi.github.io/PRODIGY_WD_03/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>Resume</h2>
+                        <p>
+                            Developed a responsive personal portfolio website to showcase projects, skills, and
+                            experience with a modern UI/UX design. The website includes...
+                            <span class="more-text">sections like about, skills, projects, and contact, along with
+                                smooth navigation and interactive elements to enhance user engagement and present a
+                                professional developer profile.</span>
+                            <span class="read-more" onclick="toggleText(this)"> Read more</span>
+                        </p>
+                        <button class="project-button"
+                            onclick="openProject('https://1rushi.github.io/PRODIGY_WD_04/')">View Project</button>
+                    </div>
+
+                    <div class="pro">
+                        <img src="/image/project-4.png" alt="Project name">
+                        <h2>No-project</h2>
+                        <p>
+                            Brief description of the project goes here.
+                        </p>
+                        <button class="project-button" onclick="openProject('#')">View Project</button>
+                    </div>
+
                 </div>
+
 
                 <div id="button">
                     <button class="move-button" id="move-left">
@@ -233,8 +443,8 @@
             <div class="experience-section">
                 <div class="google">
                     <div class="company">
-                        <img src="google.png" alt="google">
-                        <p> <button>Know More</button></p>
+                        <img src="/image/aksentt_logo.png" alt="Aksentt Tech" class="company-logo">
+                        <!-- <p> <button>Know More</button></p> -->
                     </div>
 
                     <div class="description1">
@@ -249,8 +459,8 @@
 
                 <div class="google">
                     <div class="company">
-                        <img src="google.png" alt="google">
-                        <p> <button>Know More</button></p>
+                        <img src="/image/prodigy_logo2.png" alt="Prodigy Infotech" class="company2logo">
+                        <!-- <p> <button>Know More</button></p> -->
                     </div>
 
                     <div class="description1">
@@ -271,7 +481,6 @@
                 <h1>Qualification</h1>
             </div>
 
-
             <div class="qualification-section">
                 <div class="timeline">
                     <div class="timeline-item">
@@ -288,7 +497,7 @@
                     </div>
                     <!-- <div class="timeline-item">
                     <h4>Masters</h4>
-                    <p>XYZ College, 20XX–20XX</p>
+                      <p>XYZ College, 20XX–20XX</p>
                 </div> -->
                     <div class="timeline-item">
                         <h4>Training Certificates</h4>
@@ -297,7 +506,7 @@
                 </div>
 
                 <div class="image-section">
-                    <img src="degree copy.png" alt="Graduation Image">
+                    <img src="/image/degree copy.png" alt="Graduation Image">
                     <p class="achievements">
                         Web developer with practical experience in HTML,<br> CSS, JavaScript,and React skilled in
                         creating clean <br>and responsive websites.
@@ -311,7 +520,7 @@
             <footer class="footer">
                 <div class="footer-content">
                     <div class="profile-picture">
-                        <img src="pic.png" alt="Profile Picture" />
+                        <img src="/image/pic.png" alt="Profile Picture" />
                     </div>
                     <h2>Rushikesh Kakade</h2>
                     <p class="contact-details">
@@ -322,7 +531,8 @@
                             <i class="fa fa-phone"></i> 7039967948
                         </a>
                     </p>
-                    <button class="contact-button">Contact Me</button>
+                    <button class="contact-button" onclick="goContact()">Contact Me</button>
+
                 </div>
             </footer>
         </section>

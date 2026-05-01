@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Contact Pro</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: radial-gradient(circle at 20% 20%, #7b2ff7, #000);
+    overflow:hidden;
+}
+
+/* ===== FLOATING ORBS ===== */
+.orb{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(60px);
+    opacity:0.4;
+    animation: float 8s infinite ease-in-out;
+}
+
+.orb1{
+    width:300px;height:300px;
+    background:#7b2ff7;
+    top:10%; left:10%;
+}
+
+.orb2{
+    width:250px;height:250px;
+    background:#ff4ecd;
+    bottom:10%; right:15%;
+    animation-delay:2s;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-40px)}
+}
+
+/* ===== 3D WRAPPER ===== */
+.wrapper{
+    perspective:1400px;
+}
+
+/* ===== CARD ===== */
+.card{
+    width: 700px;   
+    height: 450px;           /* increased size */
+    max-width: 90%;            /* prevents overflow on small screens */
+    padding: 50px;             /* more spacing = premium look */
+    border-radius: 24px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+
+    color: #fff;
+    text-align: center;
+
+    transform-style: preserve-3d;
+    transition: transform 0.1s linear;
+}
+/* ===== SPOTLIGHT EFFECT ===== */
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: radial-gradient(circle at var(--x) var(--y),
+        rgba(255,255,255,0.25), transparent 40%);
+    border-radius:20px;
+    pointer-events:none;
+}
+
+/* DEPTH */
+.card h2{
+    transform: translateZ(60px);
+    font-size: 34px;   /* bigger heading */
+}
+
+.card p{
+    transform: translateZ(50px);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+/* INFO */
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* ITEMS */
+.info a,
+.info div{
+    text-decoration:none;
+    padding:14px;
+    border-radius:12px;
+
+    background:linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    transform:translateZ(30px);
+    transition:0.3s;
+}
+
+/* HOVER */
+.info a:hover{
+    transform:translateZ(60px) scale(1.08);
+    background:linear-gradient(135deg,#7b2ff7,#ff4ecd);
+    box-shadow:0 10px 30px rgba(255,78,205,0.4);
+}
+
+/* ICON */
+.info i{
+    font-size:18px;
+}
+
+/* GLOW BORDER */
+.card:hover{
+    box-shadow:0 0 40px rgba(255,78,205,0.4),
+               0 30px 80px rgba(0,0,0,0.6);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .card{
+        width:90%;
+        transform:none !important;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<div class="wrapper">
+    <div class="card" id="card">
+
+        <h2>Contact Me</h2>
+        <p>Let’s build something powerful 🚀</p>
+
+        <div class="info">
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rushikeshkakade603@gmail.com" target="_blank">
+                <i class="fa fa-envelope"></i> Email Me
+            </a>
+
+            <a href="tel:+917039967948">
+                <i class="fa fa-phone"></i> Call Me
+            </a>
+
+            <div>
+                <i class="fa fa-location-dot"></i> India
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+/* ===== SMOOTH 3D TILT ===== */
+const card = document.getElementById("card");
+
+let currentX = 0, currentY = 0;
+let targetX = 0, targetY = 0;
+
+document.addEventListener("mousemove", (e) => {
+
+    let x = (window.innerWidth / 2 - e.clientX) / 20;
+    let y = (window.innerHeight / 2 - e.clientY) / 20;
+
+    targetX = x;
+    targetY = y;
+
+    /* LIGHT EFFECT */
+    card.style.setProperty('--x', e.clientX + "px");
+    card.style.setProperty('--y', e.clientY + "px");
+});
+
+/* SMOOTH MOTION */
+function animate(){
+    currentX += (targetX - currentX) * 0.1;
+    currentY += (targetY - currentY) * 0.1;
+
+    card.style.transform = `rotateY(${currentX}deg) rotateX(${currentY}deg)`;
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+/* RESET */
+document.addEventListener("mouseleave", () => {
+    targetX = 0;
+    targetY = 0;
+});
+
+</script>
+
+</body>
+</html>
