@@ -178,10 +178,9 @@
 }
 
 .line {
-    width: 708px;
+    /* width: 708px; */
     border-bottom: 2px solid;
     /* margin-left: 250px; */
-        
     margin-top: 10px
 }
 
@@ -993,10 +992,8 @@ html, body {
 }
 
 
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+  .img {
+    display: none;
+  }
+}
